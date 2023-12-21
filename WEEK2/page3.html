@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Java Examples - Learn Java Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('bg4.jpg') center center fixed;
+            background-size: cover;
+            color: #495057;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        /* Java Examples Section */
+        #java-examples {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px 0;
+        }
+
+        .java-example {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .java-example h3 {
+            color: #343a40;
+        }
+
+        .java-example p {
+            color: #495057;
+        }
+
+        .java-example a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .java-example a:hover {
+            text-decoration: underline;
+        }
+
+        /* Output Section Styling */
+        .output-container {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .output-header {
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .output-container code {
+            color: white;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Learn Java</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page2.html">Java Basics</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="java-examples.html">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page4.html">Exercises</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page5.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Java Examples Section -->
+    <section id="java-examples">
+        <div class="container">
+            <h2 class="text-center mb-4">Java Examples</h2>
+
+            <!-- Example 1 -->
+            <div class="java-example">
+                <h3>Example 1: Hello World</h3>
+                <p>This program prints "Hello, World!" to the console.</p>
+                <pre>
+                    <code class="language-java">
+                        public class HelloWorld {
+                            public static void main(String[] args) {
+                                System.out.println("Hello, World!");
+                            }
+                        }
+                    </code>
+                </pre>
+                <div class="output-container">
+                    <p class="output-header">Output:</p>
+                    <pre class="language-java">
+                        <code>
+                            Hello, World!
+                        </code>
+                    </pre>
+                </div>
+                <p>Try it online: <a href="https://www.programiz.com/java-programming/online-compiler/" target="_blank">Online Compiler</a></p>
+            </div>
+
+            <!-- Example 2 -->
+            <div class="java-example">
+                <h3>Example 2: Variables and Arithmetic</h3>
+                <p>This program demonstrates the use of variables and performs simple arithmetic operations.</p>
+                <pre>
+                    <code class="language-java">
+                        public class ArithmeticExample {
+                            public static void main(String[] args) {
+                                int a = 5;
+                                int b = 3;
+                                int sum = a + b;
+                                int product = a * b;
+                                System.out.println("Sum: " + sum);
+                                System.out.println("Product: " + product);
+                            }
+                        }
+                    </code>
+                </pre>
+                <div class="output-container">
+                    <p class="output-header">Output:</p>
+                    <pre class="language-java">
+                        <code>
+                            Sum: 8
+                            Product: 15
+                        </code>
+                    </pre>
+                </div>
+                <p>Try it online: <a href="https://www.programiz.com/java-programming/online-compiler/" target="_blank">Online Compiler</a></p>
+            </div>
+
+            <!-- Example 3 -->
+            <div class="java-example">
+                <h3>Example 3: Conditional Statements</h3>
+                <p>This program uses if-else statements to determine if a number is positive, negative, or zero.</p>
+                <pre>
+                    <code class="language-java">
+                        public class ConditionalExample {
+                            public static void main(String[] args) {
+                                int number = -5;
+
+                                if (number > 0) {
+                                    System.out.println("The number is positive.");
+                                } else if (number < 0) {
+                                    System.out.println("The number is negative.");
+                                } else {
+                                    System.out.println("The number is zero.");
+                                }
+                            }
+                        }
+                    </code>
+                </pre>
+                <div class="output-container">
+                    <p class="output-header">Output:</p>
+                    <pre class="language-java">
+                        <code>
+                            The number is negative.
+                        </code>
+                    </pre>
+                </div>
+                <p>Try it online: <a href="https://www.programiz.com/java-programming/online-compiler/" target="_blank">Online Compiler</a></p>
+            </div>
+
+            <!-- Example 4 -->
+            <div class="java-example">
+                <h3>Example 4: Looping</h3>
+                <p>This program uses a for loop to print numbers from 1 to 5.</p>
+                <pre>
+                    <code class="language-java">
+                        public class LoopExample {
+                            public static void main(String[] args) {
+                                for (int i = 1; i <= 5; i++) {
+                                    System.out.println(i);
+                                }
+                            }
+                        }
+                    </code>
+                </pre>
+                <div class="output-container">
+                    <p class="output-header">Output:</p>
+                    <pre class="language-java">
+                        <code>
+                            1
+                            2
+                            3
+                            4
+                            5
+                        </code>
+                    </pre>
+                </div>
+                <p>Try it online: <a href="https://www.programiz.com/java-programming/online-compiler/" target="_blank">Online Compiler</a></p>
+            </div>
+
+            <!-- Example 5 -->
+            <div class="java-example">
+                <h3>Example 5: Functions</h3>
+                <p>This program defines a simple function and calls it from the main method.</p>
+                <pre>
+                    <code class="language-java">
+                        public class FunctionExample {
+                            // Function to add two numbers
+                            static int add(int a, int b) {
+                                return a + b;
+                            }
+
+                            public static void main(String[] args) {
+                                int result = add(3, 4);
+                                System.out.println("Sum: " + result);
+                            }
+                        }
+                    </code>
+                </pre>
+                <div class="output-container">
+                    <p class="output-header">Output:</p>
+                    <pre class="language-java">
+                        <code>
+                            Sum: 7
+                        </code>
+                    </pre>
+                </div>
+                <p>Try it online: <a href="https://www.programiz.com/java-programming/online-compiler/" target="_blank">Online Compiler</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2023 Learn Java Programming</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

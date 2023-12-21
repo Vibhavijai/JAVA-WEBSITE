@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Feedback - Learn Java Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('bg5.jpg') center center fixed;
+            background-size: cover;
+            color: #495057;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        #feedback-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px 0;
+        }
+
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .feedback-heading {
+            text-align: center;
+            color: #343a40;
+        }
+
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 30px;
+            color: #ffc107;
+            cursor: pointer;
+        }
+
+        .star-rating input:checked ~ label {
+            color: blue;
+        }
+
+        .feedback-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .thank-you-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .thank-you-link:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Learn Java</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page2.html">Java Basics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page3.html">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/vibha/Documents/WEBTECH/WEEK2/page4.html">Exercises</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="thankyou.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Feedback Section -->
+    <section id="feedback-section">
+        <div class="container">
+            <div class="feedback-container">
+                <h2 class="feedback-heading">Give Us Your Feedback</h2>
+
+                <!-- Star Rating -->
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">&#9733;</label>
+                </div>
+
+                <!-- Feedback Form -->
+                <form class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Feedback:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Replace the submit button with an anchor tag -->
+                    <a href="page6.html" class="thank-you-link">Submit Feedback</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2023 Learn Java Programming</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
